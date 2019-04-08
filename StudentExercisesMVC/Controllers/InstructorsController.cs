@@ -111,7 +111,8 @@ namespace StudentExercisesMVC.Controllers
             }
             catch
             {
-                return View();
+                viewModel.Cohorts = GetAllCohorts();
+                return View(viewModel);
             }
         }
 
@@ -165,7 +166,8 @@ namespace StudentExercisesMVC.Controllers
             }
             catch
             {
-                return View();
+                viewModel.Cohorts = GetAllCohorts();
+                return View(viewModel);
             }
         }
 
